@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px dashed red;
 }
 
 .bot-section {
@@ -16,20 +17,103 @@
 }
 
 .navbar {
-    width: 150px;
+    width: 200px;
     background-color: black;
 }
 
 .main-section {
     background-color: lightgreen;
-    width: calc(100svw - 150px);
+    width: calc(100svw - 200px);
 }
 
 header {
     position: fixed;
     top: 0;
-    left: 150px;
+    left: 200px;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.452);
+    width: calc(100svw - 200px);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin-top: 200px;
+}
+
+.cover {
     width: 100%;
+    height: calc(((100svw - 200px) / 3) / 2);
+    background-color: lightseagreen; 
+}
+
+.img-cover {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* COLONNE */
+
+.col-33{
+    width: 33%;
+    background-color: black;
+}
+
+.col-50 {
+    width: 50%;
+    background-color: lightseagreen;
+    padding: 10px 5px;
+}
+
+/* TEXT ALIGN */
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+/* H TEST */
+
+.h-50 {
+    height: 50px;
+}
+
+.h-100 {
+    height: 100px;
+}
+
+.h-150 {
+    height: 150px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 50px;
+    }
+
+    .main-section {
+        width: calc(100svw - 50px);
+    }
+
+    header {
+        width: calc(100svw - 50px);
+        left: 50px;
+    }
 }
