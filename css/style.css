@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bot-section {
+    background-color: grey;
+    height: 100px;
+}
+
+.top-section {
+    background-color: lightcoral;
+    height: calc(100svh - 100px);
+    display: flex;
+}
+
+.navbar {
+    width: 150px;
+    background-color: black;
+}
+
+.main-section {
+    background-color: lightgreen;
+    width: calc(100svw - 150px);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 150px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+}
