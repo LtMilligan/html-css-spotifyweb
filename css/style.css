@@ -41,6 +41,13 @@ header {
     width: calc(100svw - 200px);
 }
 
+header h3 {
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +129,22 @@ ul {
     justify-content: center;
 }
 
+.jc-end {
+    justify-content: end;
+}
+
+/* ALIGN */
+
+.ai-center {
+    align-items: center;
+}
+
+/* MARGIN */
+
+.m-r-10 {
+    margin-right: 10px;
+}
+
 /* H TEST */
 
 .h-50 {
@@ -142,7 +165,25 @@ ul {
 
 /* MEDIA */
 
+@media screen and (max-width: 992px) {
+    .col-33 {
+        width: 50%;
+    }
+    .cover {
+        height: calc((100svw - 200px) / 4);
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .col-33 {
+        width: 100%;
+    }
+    .cover {
+        height: calc((100svw - 200px) / 2);
+    }
+}
+
+@media screen and (max-width: 576px) {
     .navbar {
         width: 50px;
     }
