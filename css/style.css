@@ -5,6 +5,10 @@
     border: 1px dashed red;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
 .bot-section {
     background-color: grey;
     height: 100px;
@@ -29,6 +33,7 @@
 .main-section {
     background-color: lightgreen;
     width: calc(100svw - 200px);
+    overflow-y: scroll;
 }
 
 header {
@@ -62,7 +67,6 @@ header h3 {
 
 .cover {
     width: 100%;
-    height: calc(((100svw - 200px) / 3) / 2);
     background-color: lightseagreen; 
 }
 
@@ -78,6 +82,34 @@ ul {
 
 #top-list ul li {
     margin: 0 10px;
+    color: #7D7F84;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#top-list ul li:hover {
+    color: white;
+}
+
+.over {
+    width: 100%;
+    height: 97%;
+    background-image: url(../img/circle-play-regular.svg);
+    background-color: rgba(0, 0, 0, 0.479);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.cover:hover .hide {
+    display: block;
 }
 
 /* COLONNE */
@@ -101,6 +133,16 @@ ul {
 
 .flex-w {
     flex-wrap: wrap;
+}
+
+/* POSITION */
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
 }
 
 /* TEXT ALIGN */
@@ -169,17 +211,11 @@ ul {
     .col-33 {
         width: 50%;
     }
-    .cover {
-        height: calc((100svw - 200px) / 4);
-    }
 }
 
 @media screen and (max-width: 768px) {
     .col-33 {
         width: 100%;
-    }
-    .cover {
-        height: calc((100svw - 200px) / 2);
     }
 }
 
